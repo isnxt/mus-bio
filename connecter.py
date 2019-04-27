@@ -1,50 +1,50 @@
 import model
 import utils
-import sys
+import sys, os
 
-
-nlp_model = model.NLP()
-
-
-def init():
-    print("init model...")
-    nlp_model.init()
-
-
-def close():
-    nlp_model.close()
+module_path = os.path.dirname(__file__)
 
 
 def analyse(str_input):
-    print("analysing...")
-
+    print("\n-------------------analyse start-------------------")
+    nlp_model = model.NLP()
     sentences = utils.format_data(str_input)
-    results = []
+    para_ners = []
     for sentence in sentences:
         if sentence != "":
+            print('\nsentence:\n', sentence)
             ners = nlp_model.get_ner(sentence)
-            pers, locs, tims = utils.get_tagword(ners)
-            results.append([pers, locs, tims, [sentence]])
-    return results
+            print('\nners:\n', ners)
+            tims, pers, locs = utils.get_tagword(ners)
+            if len(tims) != 0:
+                para_ners.append([tims, pers, locs, [sentence]])
+    nlp_model.close()
+    print("\n-------------------analyse end-------------------")
+    return para_ners
 
 
 if __name__ == "__main__":
-    input_path = sys.argv[1]
-    output_path = sys.argv[2]
-    print(input_path)
-    print(output_path)
-    init()
-    file = open(input_path, 'r', encoding="utf-8")
-    data = file.read()
-    print('data:\n', data)
-    sentences_ner = analyse(data)
-    with open(output_path, 'w') as f:
-        for sentence_ner in sentences_ner:
-            for ner in sentence_ner:
-                for item in ner:
-                    f.write("%s|" % item)
-                f.write("\n")
-    close()
-    print("python end ...\n\n")
+    print("\n-------------------python start-------------------")
+    in_path = sys.argv[1]
+    out_path = sys.argv[2]
+    # in_path = module_path + "/in.txt"
+    # out_path = module_path + "/out.txt"
+    print('\nin_path:\n' + in_path)
+    print('\nout_path:\n' + out_path)
+    fr = open(in_path, 'r', encoding="utf-8")
+    in_data = fr.read()
+    fr.close()
+    print('\nin_data:\n' + in_data)
+    para_ners = analyse(in_data)
+    out_data = ""
+    for sentence_ners in para_ners:
+        for type_ner in sentence_ners:
+            for item in type_ner:
+                out_data += item + "|"
+            out_data += "\n"
+    fw = open(out_path, 'w', encoding="utf-8")
+    fw.write(out_data)
+    fw.close()
+    print('\nout_data:\n' + out_data)
 
-
+    print("\n-------------------python end-------------------\n\n")

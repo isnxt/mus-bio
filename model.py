@@ -1,15 +1,18 @@
 from stanfordcorenlp import StanfordCoreNLP
-import os
+import utils
 import os
 
 module_path = os.path.dirname(__file__)
 
+
 class NLP:
-    def init(self):
-        self.nlp = StanfordCoreNLP(module_path + "/lib/stanford-corenlp-full-2018-02-27", lang='zh')
+    def __init__(self):
+        # Use an existing server
+        self.model = StanfordCoreNLP('http://localhost', port=9000, lang='zh')
 
     def close(self):
-        self.nlp.close()
+        self.model.close()
 
     def get_ner(self, sentence):
-        return self.nlp.ner(sentence)
+        return self.model.ner(sentence)
+
