@@ -16,3 +16,4 @@ class NLP:
     def get_ner(self, sentence):
         return self.model.ner(sentence)
 
+

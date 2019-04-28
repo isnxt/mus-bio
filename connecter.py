@@ -8,16 +8,17 @@ module_path = os.path.dirname(__file__)
 def analyse(str_input):
     print("\n-------------------analyse start-------------------")
     nlp_model = model.NLP()
-    sentences = utils.format_data(str_input)
+    sentences = utils.cut_sent(str_input)
     para_ners = []
     for sentence in sentences:
         if sentence != "":
-            print('\nsentence:\n', sentence)
-            ners = nlp_model.get_ner(sentence)
-            print('\nners:\n', ners)
-            tims, pers, locs = utils.get_tagword(ners)
-            if len(tims) != 0:
-                para_ners.append([tims, pers, locs, [sentence]])
+            print('----------------------------------------------')
+            print('sentence:', sentence)
+            ners = nlp_model.get_ner(utils.format_sent(sentence))
+            # print('\nners:\n', ners)
+            dates, pers, locs = utils.get_word(ners)
+            if len(dates) != 0:
+                para_ners.append([dates, pers, locs, [sentence]])
     nlp_model.close()
     print("\n-------------------analyse end-------------------")
     return para_ners
@@ -25,10 +26,10 @@ def analyse(str_input):
 
 if __name__ == "__main__":
     print("\n-------------------python start-------------------")
-    in_path = sys.argv[1]
-    out_path = sys.argv[2]
-    # in_path = module_path + "/in.txt"
-    # out_path = module_path + "/out.txt"
+    # in_path = sys.argv[1]
+    # out_path = sys.argv[2]
+    in_path = module_path + "/data/in.txt"
+    out_path = module_path + "/data/out.txt"
     print('\nin_path:\n' + in_path)
     print('\nout_path:\n' + out_path)
     fr = open(in_path, 'r', encoding="utf-8")
@@ -45,6 +46,6 @@ if __name__ == "__main__":
     fw = open(out_path, 'w', encoding="utf-8")
     fw.write(out_data)
     fw.close()
-    print('\nout_data:\n' + out_data)
+    # print('\nout_data:\n' + out_data)
 
     print("\n-------------------python end-------------------\n\n")

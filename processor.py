@@ -32,7 +32,7 @@ def clean_data(path_in="./data/wiki", path_out='./data/cleaned'):
         char_alpha = ['']
         str2 = ''
         for i in range(len(str1)):
-            if str1[i] == ' ' and str1[i - 1].isalpha() and str1[i + 1].isalpha():
+            if str1[i] == ' ' and str1[i - 1].encode('UTF-8').isalpha() and str1[i + 1].encode('UTF-8').isalpha():
                 str2 += '·'
                 continue
             elif str1[i] == ' ':
@@ -98,8 +98,6 @@ def crawl_data(path_out="./data/wiki"):
                             f = open(path_out + '/' + node_bold.text + ".txt", "w", encoding="utf-8")
                             f.write(text_life)
                             f.close()
-
-
 
 
 if __name__ == "__main__":
