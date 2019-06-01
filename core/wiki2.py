@@ -100,6 +100,13 @@ class WikiCleaner:
                     fw.close()
 
     def clean_2(self):
+        """
+        前提：
+        手动筛选clean_1不包含时间句子，
+        分隔多个时间句子
+        出生，逝世，重复句子
+        :return:
+        """
         files = os.listdir(self.path_clean1 + "\\done\\")
         for file in files:
             if os.path.splitext(file)[-1] == ".txt":
@@ -148,6 +155,12 @@ class WikiCleaner:
                 fw.close()
 
     def clean_3(self):
+        """
+        前提：
+        手动修改非全名/姓名的名字
+        :return:
+        """
+
         files = os.listdir(self.path_clean1 + "\\done\\")
         for file in files:
             if os.path.splitext(file)[-1] == ".txt":
@@ -292,13 +305,18 @@ class WikiCleaner:
                 fw.close()
 
     def clean_4(self):
+        """
+
+        前提：
+        修改错误时间格式
+        :return:
+        """
         files = os.listdir(self.path_clean3 + "\\done\\")
         locs = []
         nlp = StanfordCoreNLP('D:\\Project\\NLP-zh\\corenlp', port=9000, lang='zh')
         for file in files:
             if os.path.splitext(file)[-1] != ".txt":
                 continue
-
             in_path = self.path_clean3 + "\\done\\" + file
             out_path = self.path_clean4 + "\\" + file
             done_path = self.path_clean4 + "\\done\\" + file
@@ -337,16 +355,19 @@ class WikiCleaner:
                     break
                 cleaned += line + '\n'
             fr.close()
-            if len(lines) == 2:
-                fw = open(done_path, "w", encoding="utf-8")
-            else:
-                fw = open(out_path, "w", encoding="utf-8")
+
+            fw = open(out_path, "w", encoding="utf-8")
             fw.write(cleaned)
             fw.close()
         print(locs)
         nlp.close()
 
     def clean_5(self):
+        """
+        前提：
+        手动修改好所有人名，抵命，时间
+        :return:
+        """
         files = os.listdir(self.path_clean4 + "\\done\\")
         results = pd.DataFrame(columns=('time', 'person', 'location', 'thing'))
         for file in files:
@@ -365,8 +386,9 @@ class WikiCleaner:
                 line = lines[i].rstrip()
                 if line == "":
                     continue
-                if line[-1]!='。' and line[-1]!='，':
+                if line[-1] != '。' and line[-1] != '，':
                     print(line)
+                line = line[:-1] + '。'
                 list_time = [i for i in re.findall('\[(.*?)\]', line)]
                 list_loc = [i for i in re.findall('<(.*?)>', line)]
                 list_per = [i for i in re.findall('\{(.*?)\}', line)]
@@ -385,16 +407,17 @@ class WikiCleaner:
             result.to_csv(out_path, index=False)
             results = pd.concat([result, results], ignore_index=True)
         print(results)
-        results.to_csv('../out/test.csv', index=False,sep='|')
+        results.to_csv('../out/test.csv', index=False, sep='|')
         for col in range(results.shape[0]):
             results.thing[col] = sbc2dbc(re.sub('(\[|\]|<|>|\{|\})', '', (results.thing[col])))
         print(results.describe())
-        results.to_csv('../out/all.csv', index=False,sep='|')
+        results.to_csv('../out/all.csv', index=False, sep='|')
 
 
 if __name__ == "__main__":
     wikiCrawler = WikiCleaner()
     wikiCrawler.clean_1()
-    # wikiCrawler.clean_2()
-    # wikiCrawler.clean_3()
+    wikiCrawler.clean_2()
+    wikiCrawler.clean_3()
+    # wikiCrawler.clean_4()
     wikiCrawler.clean_5()
