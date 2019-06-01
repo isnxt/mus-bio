@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/core/wiki.py" description="    def clean_1(self):&#10;        files = os.listdir(..." line="182" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2a22793-62f1-4162-869e-0eb50f754e43" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,20 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/wiki.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/clean_4/done/伊格纳兹·普莱耶尔.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="125" column="57" lean-forward="true" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#438#3130#0" expanded="true" />
-                <element signature="e#6376#8385#0" />
-                <element signature="e#6391#7780#0" />
-                <element signature="e#6473#6582#0" />
-                <element signature="e#9732#10193#0" />
-                <element signature="e#10293#10463#0" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/out/all.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -42,19 +39,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>output_path</find>
-      <find>岁</find>
-      <find>巴赫</find>
-      <find>tims</find>
-      <find>time</find>
-      <find>list_person</find>
       <find>至</find>
       <find>LOC</find>
       <find />
       <find>~</find>
-      <find />
       <find>亲王</find>
       <find>-</find>
+      <find>'</find>
+      <find>门德</find>
+      <find>卡鲁比尼</find>
+      <find>莫札特</find>
+      <find>LOCA</find>
+      <find>国</find>
+      <find>王国&gt;</find>
+      <find>奥地利帝国&gt;</find>
+      <find>帕尔马</find>
+      <find>俄罗斯帝国&gt;</find>
+      <find>市&gt;</find>
+      <find>省&gt;</find>
+      <find>郡&gt;</find>
+      <find>埃斯特海伊</find>
+      <find>&lt;美&gt;</find>
+      <find>普罗旺斯地区艾克斯</find>
+      <find>鲍罗廷</find>
+      <find>，时{</find>
+      <find>]的</find>
+      <find>，间，</find>
+      <find>]，以前</find>
+      <find>年]，，</find>
+      <find>]{</find>
+      <find>;</find>
     </findStrings>
     <replaceStrings>
       <replace>out_path</replace>
@@ -62,66 +76,89 @@
       <replace>date</replace>
       <replace>list_per</replace>
       <replace>GPE</replace>
+      <replace>&quot;</replace>
+      <replace>凯鲁比尼</replace>
+      <replace>莫扎特</replace>
+      <replace>奥地利&gt;</replace>
+      <replace>俄罗斯&gt;</replace>
+      <replace>&gt;</replace>
+      <replace>凯斯特海伊</replace>
+      <replace>&lt;美国&gt;</replace>
+      <replace>亚桑蒲坊</replace>
+      <replace />
+      <replace>，{</replace>
+      <replace>，</replace>
+      <replace>年]，</replace>
+      <replace>]，{</replace>
+      <replace>；</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\Project\NLP-zh\data\clean_4</dir>
+      <dir>D:\Project\NLP-zh\data</dir>
+      <dir>D:\Project\NLP-zh\data\clean_4\done</dir>
+    </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pytoj.py" />
-        <option value="$PROJECT_DIR$/client.py" />
-        <option value="$PROJECT_DIR$/model.py" />
-        <option value="$PROJECT_DIR$/processor.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/data/in.txt" />
-        <option value="$PROJECT_DIR$/jieba.py" />
-        <option value="$PROJECT_DIR$/utils.py" />
-        <option value="$PROJECT_DIR$/connecter.py" />
-        <option value="$PROJECT_DIR$/data/wiki/C.P.E.巴赫.txt" />
-        <option value="$PROJECT_DIR$/core/crawl.py" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/卡尔·勒韦.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/卡尔·菲利普·埃马努埃尔·巴赫.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/卡尔·车尔尼.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/卡米尔·圣桑.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/吕利.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/夏尔·德·贝里奥.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/夏尔·玛丽·魏多.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/夏尔·瓦朗坦·阿尔康.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/多梅尼科·斯卡拉蒂.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/大卫·波佩尔.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/威廉·弗里德曼·巴赫.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安东·布鲁克纳.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安东·格里戈里耶维奇·鲁宾斯坦.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安东·雷哈.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安东宁·德沃夏克.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安东尼奥·维瓦尔第.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安东尼奥·萨列里.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/安德烈·坎普拉.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/尤利乌斯·伦特根.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/尼古拉·安德烈耶维奇·里姆斯基·科萨科夫.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/约翰内斯·勃拉姆斯.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/约翰·帕赫贝尔.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/约瑟夫·施特劳斯.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/焦阿基诺·罗西尼.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/沃尔夫冈·阿马德乌斯·莫扎特.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/让·菲利普·拉莫.txt" />
         <option value="$PROJECT_DIR$/core/utils.py" />
-        <option value="$PROJECT_DIR$/data/wiki/name.csv" />
-        <option value="$PROJECT_DIR$/data/wiki/音乐家列表.csv" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/data/wiki/莫杰斯特·彼得罗维奇·穆索尔斯基.txt" />
-        <option value="$PROJECT_DIR$/data/wiki/全部音乐家.csv" />
-        <option value="$PROJECT_DIR$/data/wiki/约翰·菲尔德.txt" />
-        <option value="$PROJECT_DIR$/data/wiki/西吉斯蒙德·塔尔贝格.txt" />
-        <option value="$PROJECT_DIR$/core/clean.py" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/约翰·阿道夫·哈塞.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/安东尼奥·维瓦尔第.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/安东宁·德沃夏克.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/安东·雷哈.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/伊格纳兹·普莱耶尔.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/约瑟夫·海顿.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/理查德·瓦格纳.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/约翰内斯·勃拉姆斯.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/让·菲利普·拉莫.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/安东尼奥·萨列里.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/李斯特·费伦茨.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/费利克斯·门德尔松·巴托尔迪.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/卡米尔·圣桑.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/沃尔夫冈·阿马德乌斯·莫扎特.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/让·雅克·卢梭.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/让·玛丽·勒克莱尔.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/西吉斯蒙德·塔尔贝格.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/弗朗西斯科·塔雷加.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/罗伯特·舒曼.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/路德维希·范·贝多芬.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/尼可罗·帕格尼尼.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/安东·布鲁克纳.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/加布里埃尔·佛瑞.txt" />
         <option value="$PROJECT_DIR$/core/wiki2.py" />
-        <option value="$PROJECT_DIR$/data/clean_1/乔瓦尼·皮耶路易吉·达·帕莱斯特里纳.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/亨里克·维尼亚夫斯基.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/伊格纳兹·普莱耶尔.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/伊萨克·阿尔贝尼斯.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/休伯特·帕里.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/克劳迪奥·蒙特威尔第.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/克拉拉·舒曼.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/克里斯托夫·维利巴尔德·格鲁克.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/加布里埃尔·佛瑞.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/路德维希·范·贝多芬.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/卡尔·车尔尼.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/卡洛·杰苏阿尔多.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/卡米尔·圣桑.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/史蒂芬·福斯特.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/吕利.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/夏尔·德·贝里奥.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/夏尔·玛丽·魏多.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/夏尔·瓦朗坦·阿尔康.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/大卫·波佩尔.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/安东·布鲁克纳.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/安东·格里戈里耶维奇·鲁宾斯坦.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/安东尼奥·维瓦尔第.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/安德烈·坎普拉.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/尼古拉·安德烈耶维奇·里姆斯基·科萨科夫.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/多梅尼科·斯卡拉蒂.txt" />
-        <option value="$PROJECT_DIR$/core/wiki.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="20" />
-    <option name="y" value="40" />
-    <option name="width" value="2696" />
-    <option name="height" value="1664" />
+    <option name="x" value="-12" />
+    <option name="width" value="1390" />
+    <option name="height" value="1754" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -150,7 +187,19 @@
               <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="wiki" type="462c0819:PsiDirectoryNode" />
+              <item name="clean_4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="clean_4" type="462c0819:PsiDirectoryNode" />
+              <item name="done" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -167,6 +216,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\NLP-zh\data\clean_4\done" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\NLP-zh" />
     </key>
@@ -183,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.wiki">
+  <component name="RunManager" selected="Python.wiki2">
     <configuration name="wiki" type="PythonConfigurationType" factoryName="Python">
       <module name="NLP-zh" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,10 +291,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49871466" visible="true" weight="0.24377358" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49871466" visible="true" weight="0.24377358" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
@@ -253,9 +306,9 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.4563492" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.8095238" />
       <window_info anchor="bottom" id="Python Console" order="11" show_stripe_button="false" sideWeight="0.4974293" weight="0.32936507" />
-      <window_info anchor="right" id="SciView" order="0" weight="0.32981133" />
+      <window_info anchor="right" id="SciView" order="0" weight="0.3382353" />
       <window_info anchor="right" id="Database" order="1" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
@@ -277,11 +330,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NLP_zh$pytoj.coverage" NAME="pytoj Coverage Results" MODIFIED="1556250550725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NLP_zh$wiki2.coverage" NAME="wiki2 Coverage Results" MODIFIED="1559237344124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/NLP_zh$wiki2.coverage" NAME="wiki2 Coverage Results" MODIFIED="1559400529486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NLP_zh$crawl.coverage" NAME="crawl Coverage Results" MODIFIED="1559144658936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NLP_zh$test.coverage" NAME="test Coverage Results" MODIFIED="1556369229143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_zh$utils.coverage" NAME="utils Coverage Results" MODIFIED="1556386908269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NLP_zh$wiki.coverage" NAME="wiki Coverage Results" MODIFIED="1559277506788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/NLP_zh$wiki.coverage" NAME="wiki Coverage Results" MODIFIED="1559372014621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NLP_zh$model.coverage" NAME="model Coverage Results" MODIFIED="1556366999157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_zh$processor.coverage" NAME="processor Coverage Results" MODIFIED="1556372094803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_zh$connecter.coverage" NAME="connecter Coverage Results" MODIFIED="1556387709115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -311,296 +364,284 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/clean_1/卡米尔·圣桑.txt">
+    <entry file="file://$PROJECT_DIR$/core/nlp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#957#1235#0" expanded="true" />
+            <element signature="e#1328#2679#0" expanded="true" />
+            <element signature="e#2722#5496#0" expanded="true" />
+            <element signature="e#4565#4958#0" />
+            <element signature="e#5538#9333#0" expanded="true" />
+            <element signature="e#11872#12160#0" expanded="true" />
+            <element signature="e#12234#13508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/亨里克·维尼亚夫斯基.txt">
+    <entry file="file://$PROJECT_DIR$/core/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="527">
+          <caret line="204" column="19" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#4663#5072#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/伊格纳兹·普莱耶尔.txt">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="128">
+          <caret line="4696" column="33" selection-start-line="4696" selection-start-column="33" selection-end-line="4696" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/伊萨克·阿尔贝尼斯.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/休伯特·帕里.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/乔瓦尼·皮耶路易吉·达·帕莱斯特里纳.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/克劳迪奥·蒙特威尔第.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/克里斯托夫·维利巴尔德·格鲁克.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/加布里埃尔·佛瑞.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/史蒂芬·福斯特.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/吕利.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/夏尔·德·贝里奥.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/夏尔·玛丽·魏多.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/约翰·阿道夫·哈塞.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/大卫·波佩尔.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/约翰内斯·勃拉姆斯.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安东·布鲁克纳.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/西吉斯蒙德·塔尔贝格.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        <state relative-caret-position="17">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安东宁·德沃夏克.txt">
+    <entry file="file://$PROJECT_DIR$/data/wiki/list.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安东·格里戈里耶维奇·鲁宾斯坦.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="117">
+          <caret line="222" column="3" selection-start-line="222" selection-end-line="222" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安东尼奥·维瓦尔第.txt">
+    <entry file="file://$PROJECT_DIR$/data/wiki/让·菲利普·拉莫.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安东尼奥·萨列里.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/让·菲利普·拉莫.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/约翰·菲尔德.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/莫杰斯特·彼得罗维奇·穆索尔斯基.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/乔瓦尼·皮耶路易吉·达·帕莱斯特里纳.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安德烈·卡迪纳·德图什.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/亨利·维厄当.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/卡尔·冯·迪特斯多夫.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/卡尔·菲利普·埃马努埃尔·巴赫.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/夏尔·德·贝里奥.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/夏尔·玛丽·魏多.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/卡尔·车尔尼.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/安东·雷哈.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/弗朗西斯科·塔雷加.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/朱塞佩·威尔第.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/沃尔夫冈·阿马德乌斯·莫扎特.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="205">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/安德烈·坎普拉.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/让·雅克·卢梭.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/尼古拉·安德烈耶维奇·里姆斯基·科萨科夫.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/让·玛丽·勒克莱尔.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/弗兰兹·冯·苏佩.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/西吉斯蒙德·塔尔贝格.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/朱塞佩·威尔第.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/罗伯特·舒曼.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/弗朗西斯科·塔雷加.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/焦阿基诺·罗西尼.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/爱德华·麦克道威尔.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/理查德·瓦格纳.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/约瑟夫·海顿.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/约翰·阿道夫·哈塞.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/范妮·门德尔松.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/阿尔伯特·洛尔青.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/让·约瑟夫·卡桑尼·德·蒙东维尔.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/费利克斯·门德尔松·巴托尔迪.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/路易吉·凯鲁比尼.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/阿尔伯特·凯特尔比.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/路易·维尔纳.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/费利克斯·门德尔松·巴托尔迪.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/路易吉·凯鲁比尼.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/焦阿基诺·罗西尼.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/夏尔·瓦朗坦·阿尔康.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/路德维希·范·贝多芬.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/多赫南伊·埃尔诺.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/多梅尼科·斯卡拉蒂.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/尼可罗·帕格尼尼.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="34">
+          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/安东·布鲁克纳.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="14" selection-start-column="21" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/加布里埃尔·佛瑞.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/wiki/约瑟夫·海顿.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/wiki2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="388">
+          <caret line="388" column="43" lean-forward="true" selection-start-line="388" selection-start-column="43" selection-end-line="388" selection-end-column="43" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#8880#10741#0" expanded="true" />
+            <element signature="e#13183#15402#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/list.csv">
+    <entry file="file://$PROJECT_DIR$/out/test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1666">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        <state relative-caret-position="6086">
+          <caret line="358" selection-start-line="358" selection-end-line="358" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/AppData/Local/PyCharm/system/python_stubs/-1994666008/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="5029" column="32" lean-forward="true" selection-start-line="5029" selection-start-column="32" selection-end-line="5029" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program/Python/Python36/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="206" column="25" lean-forward="true" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#914#1412#0" expanded="true" />
-            <element signature="e#2264#2304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/克劳迪奥·蒙特威尔第.txt">
+    <entry file="file://$PROJECT_DIR$/data/clean_5/乔瓦尼·皮耶路易吉·达·帕莱斯特里纳.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/卡洛·杰苏阿尔多.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/wiki/乔瓦尼·皮耶路易吉·达·帕莱斯特里纳.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/wiki.py">
+    <entry file="file://$PROJECT_DIR$/data/clean_5/亨利·维厄当.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="125" column="57" lean-forward="true" selection-start-line="125" selection-start-column="57" selection-end-line="125" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#438#3130#0" expanded="true" />
-            <element signature="e#6376#8385#0" />
-            <element signature="e#6391#7780#0" />
-            <element signature="e#6473#6582#0" />
-            <element signature="e#9732#10193#0" />
-            <element signature="e#10293#10463#0" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/大卫·波佩尔.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/夏尔·瓦朗坦·阿尔康.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/夏尔·玛丽·魏多.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/吕利.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/夏尔·德·贝里奥.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/卡尔·勒韦.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/克萨韦尔·沙尔文卡.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/克劳迪奥·蒙特威尔第.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_5/多梅尼科·斯卡拉蒂.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/卡尔·勒韦.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/克劳迪奥·蒙特威尔第.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/克萨韦尔·沙尔文卡.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_4/done/伊格纳兹·普莱耶尔.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/all.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
         </state>
       </provider>
     </entry>

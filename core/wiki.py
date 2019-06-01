@@ -58,7 +58,7 @@ class WikiCrawler:
                             soup_sub = BeautifulSoup(html_sub, features="html.parser")
                             node_h1 = soup_sub.find("h1", {"class": "firstHeading"})
                             [s.extract() for s in node_h1.find_all({"class": "mw-editsection"})]
-                            title = th2zh(del_space(sbc2dbc(node_h1.text)))
+                            title = th2zh(del_bracket(sbc2dbc(node_h1.text)))
                             title = title.replace(" ", "")
                             title = title.replace("-", "·")
                             title = title.replace("-", "·")
@@ -67,7 +67,7 @@ class WikiCrawler:
                             f.write(title + ",\n")
         f.close()
 
-    def get_wiki(self, mincount=200):
+    def get_wiki(self, mincount=100):
         out_path = self.path_wiki
         df = pd.read_csv(out_path + '/list.csv', encoding="utf-8")
         all_names = df[['姓名']].values
@@ -97,46 +97,51 @@ class WikiCrawler:
                 if node_ul.name == 'ul':
                     nodes_a = node_ul.find_all("a")
                     for node_a in nodes_a:
-                        if node_a != -1 and node_a is not None:
+                        if node_a == -1 or node_a is None:
+                            continue
+                        else:
                             html_sub = urlopen(
                                 "https://zh.wikipedia.org" + node_a['href']
                             ).read().decode('utf-8')  # if has Chinese, apply decode()
                             soup_sub = BeautifulSoup(html_sub, features="html.parser")
                             list_html = []
-                            # 获取全名
                             node_h1 = soup_sub.find("h1", {"class": "firstHeading"})
+                            node_card = soup_sub.find("table", {"class": "infobox biography vcard"})
+                            node_life = soup_sub.find("span", {"id": "生平"})
+                            # 获取全名
                             [s.extract() for s in node_h1.find_all({"class": "mw-editsection"})]
-                            title = th2zh(del_space(sbc2dbc(node_h1.text)))
+                            title = th2zh(del_bracket(sbc2dbc(node_h1.text)))
                             title = title.replace("-", "·")
                             title = title.replace("-", "·")
                             title = title.replace(" ", "")
                             file_path = out_path + '/' + title + ".txt"
                             if os.path.exists(file_path):
                                 continue
-                            # 获取卡片html
-                            node_card = soup_sub.find("table", {"class": "infobox biography vcard"})
-                            if node_card != -1 and node_card is not None:
+                            print("https://zh.wikipedia.org" + node_a['href'])
+                            if node_card == -1 or node_card is None or node_life == -1 or node_life is  None:
+                                print(title, ": no card/life")
+                                continue
+                            else:
+                                # 获取卡片html
                                 for node_card_th in node_card.find_all('th'):
-                                    if node_card_th.text in ['出生', '逝世']:
-                                        info = th2zh(del_space(sbc2dbc(node_card_th.parent.text)))
-                                        print(info)
+                                    if node_card_th.text == '出生' or node_card_th.text == '逝世':
+                                        info = th2zh(del_blank(del_bracket(sbc2dbc(node_card_th.parent.text))))
                                         infos = []
+                                        if '年' not in info:
+                                            continue
                                         if '日' in info:
                                             infos = re.split('(\n|日)', info)
                                         elif '月' in info:
                                             infos = re.split('(\n|月)', info)
                                         elif '年' in info:
                                             infos = re.split('(\n|年)', info)
-                                        print(infos)
                                         if len(infos) == 5:
-                                            list_html.append("<p>%s,他在%s%s。</p>" % (infos[2]+infos[3], infos[4], infos[0]))
+                                            list_html.append(
+                                                "<p>%s，他在%s%s。</p>" % (infos[2] + infos[3], infos[4], infos[0]))
                                 if len(list_html) == 0:
+                                    print(title, ": no birth/death")
                                     continue
-                            else:
-                                continue
-                            # 获取生平html
-                            node_life = soup_sub.find("span", {"id": "生平"})
-                            if node_life != -1 and node_life is not None:
+                                # 获取生平html
                                 node_next = node_life.parent.next_sibling
                                 while node_next != -1 and node_next is not None and node_next.name != 'h2':
                                     if node_next.name == 'p':
@@ -146,14 +151,13 @@ class WikiCrawler:
                                             if node_next_a.has_attr("class"):
                                                 if node_next_a['class'] in [['new'], ['extiw']]:
                                                     continue
-                                            print("https://zh.wikipedia.org" + node_next_a['href'])
                                             html = urlopen(
                                                 "https://zh.wikipedia.org" + node_next_a['href']
                                             ).read().decode('utf-8')  # if has Chinese, apply decode()
                                             soup_a = BeautifulSoup(html, features="html.parser")
                                             node_a_h1 = soup_a.find("h1", {"class": "firstHeading"})
                                             [s.extract() for s in node_a_h1.find_all({"class": "mw-editsection"})]
-                                            title = th2zh(del_space(sbc2dbc(node_a_h1.text)))
+                                            title = th2zh(del_bracket(sbc2dbc(node_a_h1.text)))
                                             title = title.replace("-", "·")
                                             title = title.replace("-", "·")
                                             if title in all_names:
@@ -162,9 +166,8 @@ class WikiCrawler:
                                                 node_next_a.string = title
                                         list_html.append(str(node_next))
                                     node_next = node_next.next_sibling
-                            else:
-                                continue
-                            # 获取生平txt
+
+                            # 获取txt
                             text_life = ''
                             for html_life in list_html:
                                 soup_life = BeautifulSoup(html_life, features="html.parser")
@@ -174,53 +177,10 @@ class WikiCrawler:
                             if len(text_life) >= mincount:
                                 text_life = th2zh(text_life)
                                 print(node_h1.text + '... ' + str(len(text_life)) + " char")
-                                print("https://zh.wikipedia.org" + node_a['href'])
                                 f = open(file_path, "w", encoding="utf-8")
                                 f.write(text_life)
                                 f.close()
                                 print(text_life)
-
-    def clean_1(self):
-        files = os.listdir(self.path_wiki)
-        for file in files:
-            if os.path.splitext(file)[-1] == ".txt":
-                in_path = self.path_wiki + "\\" + file
-                out_path = self.path_clean1 + "\\" + file
-                if os.path.exists(out_path):
-                    continue
-                fr = open(in_path, encoding='utf-8')
-                fw = open(out_path, "w", encoding="utf-8")
-                line = fr.readline()
-                while line:
-                    # 繁体转简体;删除括号;中英字符
-                    line = th2zh(del_space(sbc2dbc(line)))
-                    line = line.rstrip()
-                    # 分句
-                    left, right, end = ['“', "《"], ['”', "》"], ['？', '！', '。']
-                    stats = 0
-                    para = ""
-                    for i in range(len(line)):
-                        if line[i] in left:
-                            stats += 1
-                        elif line[i] in right:
-                            stats -= 1
-                        if stats == 0 and line[i] in end:
-                            para += line[i] + '\n'
-                        elif stats == 0 and line[i] == '”' and line[i - 1] in end:
-                            para += line[i] + '\n'
-                        else:
-                            para += line[i]
-                    sents = para.split('\n')
-                    # 日期筛选
-                    time = {"年", "月", "日", "岁", "世纪",
-                            "一""二""两""三""四""五""六""七""八""九""零""十",
-                            "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"}
-                    for i in range(len(sents)):
-                        if bool(time.intersection(sents[i])):
-                            fw.write(sents[i] + '\n')
-
-                fr.close()
-                fw.close()
 
 
 if __name__ == "__main__":

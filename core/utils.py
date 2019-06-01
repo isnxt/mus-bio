@@ -60,7 +60,7 @@ def clean_folder(folder_path):
     os.mkdir(folder_path)
 
 
-def del_space(str_data):
+def del_bracket(str_data):
     int_symbol = 0
     str_data2 = ""
     set_symbol = {('（', '）')}
@@ -94,6 +94,7 @@ def add_space(str_data):
 
 
 def del_blank(str_data):
+    str_data = str_data.replace('\xa0', ' ')
     str_data2 = ''
     for i in range(len(str_data)):
         if str_data[i] == ' ' and str_data[i - 1].encode('UTF-8').isalpha() and str_data[i + 1].encode(
@@ -117,7 +118,7 @@ def format_data(str_data):
     # 去空格
     # str_data = del_blank(str_data)
     # 去括号
-    str_data = del_space(str_data)
+    str_data = del_bracket(str_data)
     # 将繁体转换成简体
     str_data = th2zh(str_data)
     # 加空格
@@ -184,6 +185,27 @@ def long_ners(ners, list_symbol):
     return ners
 
 
+def age2year(birth, death, sent):
+    year = re.findall('(\d{4}年)', sent)
+    if len(year) == 0:
+        ages = re.findall('(\d+岁)', sent)
+        for i in range(len(ages)):
+            age = int(ages[i][:-1])
+            if len(birth) >= 4:
+                sent = sent.replace(ages[i], str(int(birth[:4]) + age) + "年")
+            elif len(death) >= 4:
+                sent = sent.replace(ages[i], str(int(death[:4]) - age) + "年")
+    return sent
+
+
+def drop_dup(ids):
+    new_ids = []
+    for id in ids:
+        if id not in new_ids:
+            new_ids.append(id)
+    return new_ids
+
+
 def cut_sent(para):
     para, list_symbol = short_data(para)
     para = re.sub('([。！？；\?])([^”’])', r"\1\n\2", para)  # 单字符断句符
@@ -200,7 +222,7 @@ def cut_sent(para):
 def sbc2dbc(str_data):
     # 半角转全角
     list_char = [('【', '['), ('】', ']'), ('｢', '“'), ('｣', "”"), (',', '，'), ('?', '？'), ('!', '！'), ('(', '（'),
-                 (')', '）'), (':', '：')]
+                 (')', '）'), (':', '：'), ('-', '-')]
     for i in range(len(list_char)):
         str_data = str_data.replace(list_char[i][0], list_char[i][1])
     return str_data
