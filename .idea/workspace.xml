@@ -10,19 +10,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/wiki2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1034">
-              <caret line="421" column="27" lean-forward="true" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
+            <state relative-caret-position="1155">
+              <caret line="421" column="27" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#876#3834#0" expanded="true" />
                 <element signature="e#3867#6011#0" expanded="true" />
                 <element signature="e#6044#13344#0" expanded="true" />
-                <element signature="e#13377#15553#0" expanded="true" />
-                <element signature="e#15586#17917#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="323">
+                <caret line="19" selection-start-line="19" selection-end-line="19" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -30,11 +40,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/wiki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="170">
               <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#3189#10548#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/clean_1/伊戈尔·费奥多罗维奇·斯特拉文斯基.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/伊萨克·阿尔贝尼斯.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/保罗·欣德米特.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/利奥波德·戈多夫斯基.txt" />
@@ -166,6 +174,7 @@
         <option value="$PROJECT_DIR$/data/clean_4/欧仁·伊萨伊.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/弗里茨·克莱斯勒.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/古斯塔夫·马勒.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -283,6 +292,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -472,9 +482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/埃里克·萨蒂.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/埃里克·萨蒂.txt" />
     <entry file="file://$PROJECT_DIR$/data/clean_1/done/埃里希·科恩戈尔德.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -554,16 +562,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/彼得·沃洛克.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/all.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/彼得·沃洛克.txt" />
+    <entry file="file://$PROJECT_DIR$/out/all.csv" />
     <entry file="file://$PROJECT_DIR$/data/clean_4/done/巴托克·贝拉.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -613,23 +613,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/古斯塔夫·马勒.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/wiki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#3189#10548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/马里奥·卡斯泰尔诺沃·泰代斯科.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/古斯塔夫·马勒.txt" />
+    <entry file="file://$PROJECT_DIR$/data/clean_1/马里奥·卡斯泰尔诺沃·泰代斯科.txt" />
     <entry file="file://$PROJECT_DIR$/core/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -641,40 +626,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="325">
-            <caret line="45" selection-start-line="45" selection-end-line="45" />
-            <folding>
-              <element signature="e#853#1009#0" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/wiki-long/D.斯卡拉蒂.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/wiki-long/伯恩斯坦.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/wiki-long/吕利.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/wiki-long/D.斯卡拉蒂.txt" />
+    <entry file="file://$PROJECT_DIR$/out/wiki-long/伯恩斯坦.txt" />
+    <entry file="file://$PROJECT_DIR$/out/wiki-long/吕利.txt" />
     <entry file="file://$PROJECT_DIR$/core/wiki2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="421" column="27" lean-forward="true" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
+        <state relative-caret-position="1155">
+          <caret line="421" column="27" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#876#3834#0" expanded="true" />
             <element signature="e#3867#6011#0" expanded="true" />
             <element signature="e#6044#13344#0" expanded="true" />
-            <element signature="e#13377#15553#0" expanded="true" />
-            <element signature="e#15586#17917#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wiki.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="323">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
