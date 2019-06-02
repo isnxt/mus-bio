@@ -161,7 +161,7 @@ class WikiCleaner:
         :return:
         """
 
-        files = os.listdir(self.path_clean1 + "\\done\\")
+        files = os.listdir(self.path_clean2 + "\\done\\")
         for file in files:
             if os.path.splitext(file)[-1] == ".txt":
                 in_path = self.path_clean2 + "\\done\\" + file
@@ -306,7 +306,6 @@ class WikiCleaner:
 
     def clean_4(self):
         """
-
         前提：
         修改错误时间格式
         :return:
@@ -398,7 +397,7 @@ class WikiCleaner:
                 for time in list_time:
                     for per in list_per:
                         for loc in list_loc:
-                            df = pd.DataFrame({'time': [time], 'person': [per], 'location': [loc], 'thing': [line]})
+                            df = pd.DataFrame({'time': [time], 'person': [per], 'location': [loc], 'thing': [sbc2dbc(line)]})
                             result = result.append(df, ignore_index=True)
             result = result.sort_values(by=['time'])
             result = result.fillna(method='ffill')
@@ -407,11 +406,11 @@ class WikiCleaner:
             result.to_csv(out_path, index=False)
             results = pd.concat([result, results], ignore_index=True)
         print(results)
-        results.to_csv('../out/test.csv', index=False, sep='|')
+        results.to_csv('../out/test.csv', index=False)
         for col in range(results.shape[0]):
             results.thing[col] = sbc2dbc(re.sub('(\[|\]|<|>|\{|\})', '', (results.thing[col])))
-        print(results.describe())
-        results.to_csv('../out/all.csv', index=False, sep='|')
+        print(results.info())
+        results.to_csv('../out/all.csv', index=False)
 
 
 if __name__ == "__main__":
@@ -419,5 +418,5 @@ if __name__ == "__main__":
     wikiCrawler.clean_1()
     wikiCrawler.clean_2()
     wikiCrawler.clean_3()
-    # wikiCrawler.clean_4()
-    wikiCrawler.clean_5()
+    wikiCrawler.clean_4()
+    # wikiCrawler.clean_5()

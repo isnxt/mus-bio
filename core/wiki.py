@@ -67,7 +67,7 @@ class WikiCrawler:
                             f.write(title + ",\n")
         f.close()
 
-    def get_wiki(self, mincount=100):
+    def get_wiki(self, mincount=0):
         out_path = self.path_wiki
         df = pd.read_csv(out_path + '/list.csv', encoding="utf-8")
         all_names = df[['姓名']].values

@@ -10,15 +10,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/wiki2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="408" column="22" lean-forward="true" selection-start-line="408" selection-start-column="22" selection-end-line="408" selection-end-column="22" />
+            <state relative-caret-position="959">
+              <caret line="422" lean-forward="true" selection-start-line="422" selection-end-line="422" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#876#3834#0" expanded="true" />
                 <element signature="e#3867#6011#0" expanded="true" />
+                <element signature="e#6044#13344#0" expanded="true" />
+                <element signature="e#13377#15553#0" expanded="true" />
+                <element signature="e#15586#17917#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#5673#5972#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/wiki.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#3189#10548#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,11 +64,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LOC</find>
       <find />
       <find>~</find>
       <find>亲王</find>
-      <find>-</find>
       <find>'</find>
       <find>门德</find>
       <find>卡鲁比尼</find>
@@ -65,6 +92,8 @@
       <find>]{</find>
       <find>;</find>
       <find>李斯特</find>
+      <find>-</find>
+      <find>—</find>
     </findStrings>
     <replaceStrings>
       <replace>out_path</replace>
@@ -87,26 +116,18 @@
       <replace>]，{</replace>
       <replace>；</replace>
       <replace>年]，</replace>
+      <replace>李斯特·费伦茨</replace>
+      <replace>-</replace>
     </replaceStrings>
     <dirStrings>
+      <dir>D:\Project\NLP-zh\data\clean_4\done</dir>
       <dir>D:\Project\NLP-zh\data\clean_4</dir>
       <dir>D:\Project\NLP-zh\data</dir>
-      <dir>D:\Project\NLP-zh\data\clean_4\done</dir>
     </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/clean_4/done/伊格纳兹·普莱耶尔.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/约瑟夫·海顿.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/理查德·瓦格纳.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/约翰内斯·勃拉姆斯.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/让·菲利普·拉莫.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/安东尼奥·萨列里.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/李斯特·费伦茨.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/费利克斯·门德尔松·巴托尔迪.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/卡米尔·圣桑.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/沃尔夫冈·阿马德乌斯·莫扎特.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/让·雅克·卢梭.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/让·玛丽·勒克莱尔.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/西吉斯蒙德·塔尔贝格.txt" />
@@ -140,14 +161,24 @@
         <option value="$PROJECT_DIR$/data/clean_1/弗朗兹·施密特.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/弗朗兹·施雷克尔.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/弗雷德里克·戴留斯.txt" />
-        <option value="$PROJECT_DIR$/core/wiki.py" />
         <option value="$PROJECT_DIR$/data/clean_4/done/巴托克·贝拉.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/帕西·葛人杰.txt" />
-        <option value="$PROJECT_DIR$/core/wiki2.py" />
         <option value="$PROJECT_DIR$/data/clean_4/done/伊戈尔·费奥多罗维奇·斯特拉文斯基.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/吉安·弗朗切斯科·马利皮耶罗.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/阿瑟·本杰明.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/米哈伊尔·伊万诺维奇·格林卡.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/大卫·波佩尔.txt" />
+        <option value="$PROJECT_DIR$/data/clean_1/爱德华·麦克道威尔.txt" />
+        <option value="$PROJECT_DIR$/data/wiki/爱德华·麦克道威尔.txt" />
+        <option value="$PROJECT_DIR$/data/wiki/克拉拉·舒曼.txt" />
+        <option value="$PROJECT_DIR$/data/clean_2/done/大卫·波佩尔.txt" />
+        <option value="$PROJECT_DIR$/data/clean_3/done/李斯特·费伦茨.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/李斯特·费伦茨.txt" />
+        <option value="$PROJECT_DIR$/core/wiki.py" />
+        <option value="$PROJECT_DIR$/core/wiki2.py" />
+        <option value="$PROJECT_DIR$/data/clean_3/done/亚历山大·尼古拉耶维奇·斯克里亚宾.txt" />
+        <option value="$PROJECT_DIR$/data/clean_3/古斯塔夫·马勒.txt" />
+        <option value="$PROJECT_DIR$/core/utils.py" />
       </list>
     </option>
   </component>
@@ -178,6 +209,12 @@
               <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="clean_1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
@@ -281,10 +318,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49871466" visible="true" weight="0.24377358" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49871466" visible="true" weight="0.24377358" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
@@ -295,7 +333,7 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.45899472" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.45899472" />
       <window_info anchor="bottom" id="Python Console" order="11" show_stripe_button="false" sideWeight="0.4974293" weight="0.32936507" />
       <window_info anchor="right" id="SciView" order="0" weight="0.3382353" />
       <window_info anchor="right" id="Database" order="1" show_stripe_button="false" />
@@ -319,11 +357,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NLP_zh$pytoj.coverage" NAME="pytoj Coverage Results" MODIFIED="1556250550725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NLP_zh$wiki2.coverage" NAME="wiki2 Coverage Results" MODIFIED="1559408321149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/NLP_zh$wiki2.coverage" NAME="wiki2 Coverage Results" MODIFIED="1559449172709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NLP_zh$crawl.coverage" NAME="crawl Coverage Results" MODIFIED="1559144658936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NLP_zh$test.coverage" NAME="test Coverage Results" MODIFIED="1556369229143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_zh$utils.coverage" NAME="utils Coverage Results" MODIFIED="1556386908269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NLP_zh$wiki.coverage" NAME="wiki Coverage Results" MODIFIED="1559406221651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/NLP_zh$wiki.coverage" NAME="wiki Coverage Results" MODIFIED="1559447601537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/NLP_zh$model.coverage" NAME="model Coverage Results" MODIFIED="1556366999157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_zh$processor.coverage" NAME="processor Coverage Results" MODIFIED="1556372094803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_zh$connecter.coverage" NAME="connecter Coverage Results" MODIFIED="1556387709115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -353,12 +391,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/clean_5/夏尔·玛丽·魏多.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_5/吕利.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/clean_5/夏尔·德·贝里奥.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -484,9 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/古斯塔夫·马勒.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/clean_1/done/吉安·弗朗切斯科·马利皮耶罗.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -546,9 +575,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/尼古拉·雅科夫列维奇·米亚斯科夫斯基.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/尼古拉·雅科夫列维奇·米亚斯科夫斯基.txt" />
     <entry file="file://$PROJECT_DIR$/data/clean_1/done/巴托克·贝拉.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -577,9 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_1/弗里茨·克莱斯勒.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/弗里茨·克莱斯勒.txt" />
     <entry file="file://$PROJECT_DIR$/data/clean_1/done/弗雷德里克·戴留斯.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -594,17 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/wiki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-921">
-          <caret line="83" column="20" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#7823#9548#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,14 +671,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/古斯塔夫·马勒.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wiki.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#3189#10548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/clean_1/马里奥·卡斯泰尔诺沃·泰代斯科.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/wiki2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="408" column="22" lean-forward="true" selection-start-line="408" selection-start-column="22" selection-end-line="408" selection-end-column="22" />
+        <state relative-caret-position="959">
+          <caret line="422" lean-forward="true" selection-start-line="422" selection-end-line="422" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#876#3834#0" expanded="true" />
             <element signature="e#3867#6011#0" expanded="true" />
+            <element signature="e#6044#13344#0" expanded="true" />
+            <element signature="e#13377#15553#0" expanded="true" />
+            <element signature="e#15586#17917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#5673#5972#0" expanded="true" />
           </folding>
         </state>
       </provider>

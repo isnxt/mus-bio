@@ -222,7 +222,7 @@ def cut_sent(para):
 def sbc2dbc(str_data):
     # 半角转全角
     list_char = [('【', '['), ('】', ']'), ('｢', '“'), ('｣', "”"), (',', '，'), ('?', '？'), ('!', '！'), ('(', '（'),
-                 (')', '）'), (':', '：'), ('-', '-')]
+                 (')', '）'), (':', '：'), ('-', '-'),('—','-')]
     for i in range(len(list_char)):
         str_data = str_data.replace(list_char[i][0], list_char[i][1])
     return str_data
