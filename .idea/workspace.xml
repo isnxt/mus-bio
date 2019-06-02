@@ -10,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/wiki2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
-              <caret line="422" lean-forward="true" selection-start-line="422" selection-end-line="422" />
+            <state relative-caret-position="1034">
+              <caret line="421" column="27" lean-forward="true" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#876#3834#0" expanded="true" />
@@ -22,19 +22,6 @@
                 <element signature="e#6044#13344#0" expanded="true" />
                 <element signature="e#13377#15553#0" expanded="true" />
                 <element signature="e#15586#17917#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#5673#5972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,24 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find>~</find>
-      <find>亲王</find>
-      <find>'</find>
-      <find>门德</find>
-      <find>卡鲁比尼</find>
-      <find>莫札特</find>
-      <find>LOCA</find>
-      <find>国</find>
-      <find>王国&gt;</find>
-      <find>奥地利帝国&gt;</find>
-      <find>帕尔马</find>
-      <find>俄罗斯帝国&gt;</find>
-      <find>市&gt;</find>
-      <find>省&gt;</find>
-      <find>郡&gt;</find>
-      <find>埃斯特海伊</find>
-      <find>&lt;美&gt;</find>
       <find>普罗旺斯地区艾克斯</find>
       <find>鲍罗廷</find>
       <find>，时{</find>
@@ -94,6 +63,24 @@
       <find>李斯特</find>
       <find>-</find>
       <find>—</find>
+      <find>&lt;奥地利帝国喀里斯特&gt;</find>
+      <find>奥地利帝国</find>
+      <find>奥匈帝国</find>
+      <find>美国纽约州纽约市布鲁克林</find>
+      <find>波兰格利维采</find>
+      <find>俄罗斯帝国叶卡捷琳诺斯拉夫省松佐夫卡</find>
+      <find>委内瑞拉加拉加斯</find>
+      <find>英吉利海峡</find>
+      <find>阿根廷阿尔塔</find>
+      <find>下诺曼底翁弗勒</find>
+      <find>斯洛文尼亚格拉代茨</find>
+      <find>法国巴黎</find>
+      <find>西班牙莱里达</find>
+      <find>巴伐利亚布兰德</find>
+      <find>芬兰大公国海门林纳</find>
+      <find>阿尔塔·格拉西亚</find>
+      <find>列日</find>
+      <find>&lt;伊&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>out_path</replace>
@@ -110,7 +97,6 @@
       <replace>凯斯特海伊</replace>
       <replace>&lt;美国&gt;</replace>
       <replace>亚桑蒲坊</replace>
-      <replace />
       <replace>，{</replace>
       <replace>，</replace>
       <replace>]，{</replace>
@@ -118,31 +104,17 @@
       <replace>年]，</replace>
       <replace>李斯特·费伦茨</replace>
       <replace>-</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>D:\Project\NLP-zh\data\clean_4\done</dir>
-      <dir>D:\Project\NLP-zh\data\clean_4</dir>
       <dir>D:\Project\NLP-zh\data</dir>
+      <dir>D:\Project\NLP-zh\data\clean_4</dir>
     </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/clean_4/done/让·雅克·卢梭.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/让·玛丽·勒克莱尔.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/西吉斯蒙德·塔尔贝格.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/弗朗西斯科·塔雷加.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/罗伯特·舒曼.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/路德维希·范·贝多芬.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/尼可罗·帕格尼尼.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/安东·布鲁克纳.txt" />
-        <option value="$PROJECT_DIR$/data/clean_4/done/加布里埃尔·佛瑞.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/data/clean_1/乌埃德·兰戛尔.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/乔治·埃内斯库.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/亚历山大·冯·策姆林斯基.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/亚历山大·尼古拉耶维奇·斯克里亚宾.txt" />
-        <option value="$PROJECT_DIR$/data/clean_1/亨利·考埃尔.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/伊戈尔·费奥多罗维奇·斯特拉文斯基.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/伊萨克·阿尔贝尼斯.txt" />
         <option value="$PROJECT_DIR$/data/clean_1/保罗·欣德米特.txt" />
@@ -175,10 +147,25 @@
         <option value="$PROJECT_DIR$/data/clean_3/done/李斯特·费伦茨.txt" />
         <option value="$PROJECT_DIR$/data/clean_4/done/李斯特·费伦茨.txt" />
         <option value="$PROJECT_DIR$/core/wiki.py" />
-        <option value="$PROJECT_DIR$/core/wiki2.py" />
         <option value="$PROJECT_DIR$/data/clean_3/done/亚历山大·尼古拉耶维奇·斯克里亚宾.txt" />
         <option value="$PROJECT_DIR$/data/clean_3/古斯塔夫·马勒.txt" />
         <option value="$PROJECT_DIR$/core/utils.py" />
+        <option value="$PROJECT_DIR$/core/wiki2.py" />
+        <option value="$PROJECT_DIR$/data/clean_4/阿隆·科普兰.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/理查德·魏茨.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/谢尔盖·谢尔盖耶维奇·普罗科菲耶夫.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/恩里克·格拉纳多斯.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/埃里克·萨蒂.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/胡戈·沃尔夫.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/阿希尔·克洛德·德彪西.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/雷纳尔多·哈恩.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/慕葵.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/马克斯·雷格.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/让·西贝柳斯.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/曼努埃尔·德·法雅.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/欧仁·伊萨伊.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/done/弗里茨·克莱斯勒.txt" />
+        <option value="$PROJECT_DIR$/data/clean_4/古斯塔夫·马勒.txt" />
       </list>
     </option>
   </component>
@@ -203,29 +190,7 @@
             <path>
               <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
               <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="clean_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="clean_4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP-zh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP-zh" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,7 +283,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -333,7 +297,7 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.45899472" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.45899472" />
       <window_info anchor="bottom" id="Python Console" order="11" show_stripe_button="false" sideWeight="0.4974293" weight="0.32936507" />
       <window_info anchor="right" id="SciView" order="0" weight="0.3382353" />
       <window_info anchor="right" id="Database" order="1" show_stripe_button="false" />
@@ -391,15 +355,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/clean_5/夏尔·德·贝里奥.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_5/卡尔·勒韦.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/clean_5/克萨韦尔·沙尔文卡.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/clean_5/克劳迪奥·蒙特威尔第.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -418,19 +373,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/clean_4/done/克萨韦尔·沙尔文卡.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="621">
-            <caret line="45" selection-start-line="45" selection-end-line="45" />
-            <folding>
-              <element signature="e#853#1009#0" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/clean_4/done/伊格纳兹·普莱耶尔.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,21 +630,6 @@
     <entry file="file://$PROJECT_DIR$/data/clean_1/马里奥·卡斯泰尔诺沃·泰代斯科.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/wiki2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="422" lean-forward="true" selection-start-line="422" selection-end-line="422" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#876#3834#0" expanded="true" />
-            <element signature="e#3867#6011#0" expanded="true" />
-            <element signature="e#6044#13344#0" expanded="true" />
-            <element signature="e#13377#15553#0" expanded="true" />
-            <element signature="e#15586#17917#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -710,6 +637,43 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <element signature="e#5673#5972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="325">
+            <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <folding>
+              <element signature="e#853#1009#0" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/wiki-long/D.斯卡拉蒂.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/wiki-long/伯恩斯坦.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/wiki-long/吕利.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/wiki2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="421" column="27" lean-forward="true" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#876#3834#0" expanded="true" />
+            <element signature="e#3867#6011#0" expanded="true" />
+            <element signature="e#6044#13344#0" expanded="true" />
+            <element signature="e#13377#15553#0" expanded="true" />
+            <element signature="e#15586#17917#0" expanded="true" />
           </folding>
         </state>
       </provider>
