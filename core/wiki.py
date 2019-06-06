@@ -81,8 +81,8 @@ class WikiCrawler:
         soup = BeautifulSoup(html, features="html.parser")
         i = 0
         for node_div in soup.find_all("div", {"class": "hatnote navigation-not-searchable"}):
-            if i < 0:
-                i +=1
+            if i < 5:
+                i += 1
                 continue
             period = node_div.find_previous("h2").find("span", {"class": "mw-headline"}).text
             print('\n')
@@ -112,7 +112,6 @@ class WikiCrawler:
                             node_h1 = soup_sub.find("h1", {"class": "firstHeading"})
                             node_card = soup_sub.find("table", {"class": "infobox biography vcard"})
                             node_life = soup_sub.find("span", {"id": "生平"})
-                            node_music = soup_sub.find("span", {"id": "音樂生涯"})
                             # 获取全名
                             [s.extract() for s in node_h1.find_all({"class": "mw-editsection"})]
                             title = th2zh(del_bracket(sbc2dbc(node_h1.text)))
@@ -121,6 +120,8 @@ class WikiCrawler:
                             title = title.replace(" ", "")
                             file_path = out_path + '/' + title + ".txt"
                             if os.path.exists(file_path):
+                                continue
+                            if title == "莫里斯·迪吕弗莱":
                                 continue
                             print("https://zh.wikipedia.org" + node_a['href'])
                             if node_card == -1 or node_card is None or node_life == -1 or node_life is None:

@@ -3,9 +3,31 @@ import zhconv
 import os
 import sys
 import shutil
+import requests
 
 root_path = os.path.abspath('.')
 
+def gaode(address):
+    parameters = {'address': address, 'key': 'd1e3d0ebc0e60854325ea04d076659bd'}
+    url = 'https://restapi.amap.com/v3/geocode/geo?parameters'
+    response = requests.get(url, parameters)
+    answer = response.json()
+    if answer['count'] == str(1):
+        print(answer)
+        print(address + "的经纬度：", answer['geocodes'][0]['location'])
+        location = answer['geocodes'][0]['location'].split(',')
+        country = answer['geocodes'][0]['country']
+        province = answer['geocodes'][0]['province']
+        city = answer['geocodes'][0]['city']
+
+        lat = location[1]       #纬度
+        lng = location[0]       #经度
+
+        print(lat)
+        print(lng)
+        print(country)
+        print(province)
+        print(city)
 
 def is_chinese(uchar):
     """判断一个unicode是否是汉字"""
@@ -108,7 +130,10 @@ def del_blank(str_data):
 
 
 def th2zh(str_data):
-    return zhconv.convert(str_data, 'zh-cn')
+    if str_data is None:
+        return str_data
+    else:
+        return zhconv.convert(str_data, 'zh-cn')
 
 
 def format_data(str_data):
@@ -198,6 +223,7 @@ def age2year(birth, death, sent):
     return sent
 
 
+
 def drop_dup(ids):
     new_ids = []
     for id in ids:
@@ -265,5 +291,5 @@ def zh2number(str_phrase):
 
 
 if __name__ == "__main__":
-    phrase = zh2number("一九九八年二月")
-    print(phrase)
+    zh2number("二")
+

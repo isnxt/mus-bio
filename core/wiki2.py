@@ -7,11 +7,14 @@ import re
 import jieba.analyse
 from core.utils import *
 from stanfordcorenlp import StanfordCoreNLP
+import time
+from geopy.exc import GeocoderTimedOut
+from geopy.geocoders import Nominatim
 
 root_path = os.path.abspath('..')
 # %% 配置
 # 输出设置
-
+pd.set_option('display.max_colwidth', 100)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 pd.set_option('display.width', None)
@@ -364,53 +367,89 @@ class WikiCleaner:
     def clean_5(self):
         """
         前提：
-        手动修改好所有人名，抵命，时间
+        手动修改好所有人名，地名，时间
         :return:
         """
         files = os.listdir(self.path_clean4 + "\\done\\")
-        results = pd.DataFrame(columns=('time', 'person', 'location', 'thing'))
+        results = pd.DataFrame(columns=('date', 'person', 'location', 'thing'))
+        geolocator = Nominatim()
+        geos = pd.read_csv('../data/geopy.csv')
+        results = pd.DataFrame(columns=(
+            'date', 'ppl', 'geo', 'gtype', 'glat', 'glon', 'gbox0', 'gbox1', 'gbox2', 'gbox3', 'ginfo', 'desc'))
         for file in files:
             if os.path.splitext(file)[-1] != ".txt":
                 continue
             in_path = self.path_clean4 + "\\done\\" + file
             out_path = self.path_clean5 + "\\" + file
             done_path = self.path_clean5 + "\\done\\" + file
-            # if os.path.exists(out_path) or os.path.exists(done_path):
-            #     continue
+            if os.path.exists(done_path):
+                result = pd.read_csv(done_path)
+                results = pd.concat([result, results], ignore_index=True, axis=0, sort=False)
+                continue
             fr = open(in_path, encoding='utf-8')
+            print('\n#', file)
             lines = fr.readlines()
-            last_loc = ""
-            result = pd.DataFrame(columns=('time', 'person', 'location', 'thing'))
+            result = pd.DataFrame(columns=(
+                'date', 'ppl', 'geo', 'gtype', 'glat', 'glon', 'gbox0', 'gbox1', 'gbox2', 'gbox3', 'ginfo', 'desc'))
             for i in range(len(lines)):
                 line = lines[i].rstrip()
+                line = line.replace('><', '-')
                 if line == "":
                     continue
                 if line[-1] != '。' and line[-1] != '，':
-                    print(line)
+                    print('标点：', line)
+                    continue
                 line = line[:-1] + '。'
-                list_time = [i for i in re.findall('\[(.*?)\]', line)]
+                list_date = [i for i in re.findall('\[(.*?)\]', line)]
                 list_loc = [i for i in re.findall('<(.*?)>', line)]
                 list_per = [i for i in re.findall('\{(.*?)\}', line)]
-                list_time = drop_dup(list_time)
+                list_date = drop_dup(list_date)
                 list_loc = drop_dup(list_loc)
                 list_per = drop_dup(list_per)
-                for time in list_time:
+                for loc in list_loc:
+                    if loc in geos['geo'].values:
+                        geo = (geos[geos['geo'] == loc]).reset_index(drop=True)
+                    else:
+                        time.sleep(2)
+                        geocode = geolocator.geocode(loc, language='zh-CN', timeout=20)
+
+                        if geocode is None:
+                            print('>>', file[:-4], '<' + loc + '>', line)
+                            print('无结果!!!!')
+                            break
+                        geocode = geocode.raw
+                        geo = pd.DataFrame(
+                            {'geo': [loc], 'glat': [geocode['lat']], 'glon': [geocode['lon']],
+                             'gbox0': [geocode['boundingbox'][0]], 'gbox1': [geocode['boundingbox'][1]],
+                             'gbox2': [geocode['boundingbox'][2]], 'gbox3': [geocode['boundingbox'][3]],
+                             'gtype': [geocode['type']],
+                             'ginfo': [th2zh(geocode['display_name']).replace(', ', '-')]})
+                        if '台湾' in geo.ginfo[0] or ('中国' in geo.ginfo[0] and '上海' not in geo.ginfo[0]) or '日本' in geo.ginfo[0]:
+                            print('>> 中国/日本!', file[:-4], '<' + loc + '>', line)
+                            print(geo[['geo', 'ginfo']].values)
+                            break
+                        print('>>', file[:-4], '<' + loc + '>', line)
+                        print(geo[['geo', 'ginfo']].values)
+                        geos = geos.append(geo, ignore_index=True, sort=False)
                     for per in list_per:
-                        for loc in list_loc:
-                            df = pd.DataFrame({'time': [time], 'person': [per], 'location': [loc], 'thing': [sbc2dbc(line)]})
-                            result = result.append(df, ignore_index=True)
-            result = result.sort_values(by=['time'])
-            result = result.fillna(method='ffill')
-            result = result.fillna(method='bfill')
+                        for date in list_date:
+                            df = pd.DataFrame({'date': [date], 'ppl': [per], 'geo': [loc],
+                                               'desc': [sbc2dbc(line)]})
+                            df = pd.merge(df, geo, on=['geo'], how='left')
+                            result = result.append(df, ignore_index=True, sort=False)
+                            result = result.sort_values(by=['date'])
+                            result = result.fillna(method='ffill')
+                            result = result.fillna(method='bfill')
             fr.close()
+            geos.to_csv('../data/geopy.csv', index=False)
             result.to_csv(out_path, index=False)
-            results = pd.concat([result, results], ignore_index=True)
-        print(results)
-        results.to_csv('../out/test.csv', index=False)
+            results = pd.concat([result, results], ignore_index=True, axis=0, sort=False)
+
         for col in range(results.shape[0]):
-            results.thing[col] = sbc2dbc(re.sub('(\[|\]|<|>|\{|\})', '', (results.thing[col])))
+            results.desc[col] = sbc2dbc(re.sub('(\[|\]|<|>|\{|\})', '', (results.desc[col])))
         print(results.info())
-        results.to_csv('../out/all.csv', index=False)
+        print(len(results['ppl'].value_counts()))
+        results.to_csv('../out/%s.csv' % (str(len(results['ppl'].value_counts()))), index=False, encoding='utf_8_sig')
 
 
 if __name__ == "__main__":
@@ -418,5 +457,5 @@ if __name__ == "__main__":
     wikiCrawler.clean_1()
     wikiCrawler.clean_2()
     wikiCrawler.clean_3()
-    wikiCrawler.clean_4()
+    # wikiCrawler.clean_4()
     # wikiCrawler.clean_5()
