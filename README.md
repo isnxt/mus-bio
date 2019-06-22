@@ -19,3 +19,4 @@
 放到刚才解压后的文件夹stanford-corenlp-full-2018-10-05下
 - 将start.bat放到刚才解压后的文件夹stanford-corenlp-full-2018-10-05下，并运行
 - 调用py2java.py
+
