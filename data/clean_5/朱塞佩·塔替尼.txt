@@ -1,0 +1,3 @@
+date,ppl,geo,gtype,glat,glon,gbox0,gbox1,gbox2,gbox3,ginfo,desc,ppls
+1692年4月8日,朱塞佩·塔替尼,Piran,administrative,45.5289394,13.5675658,45.4455848,45.6095781,13.384442300000002,13.71236,Piran / Pirano-Upravna enota Piran / Unità amministrativa Pirano-Obalno-kraška-斯洛文尼亚,[1692年4月8日]，{朱塞佩·塔替尼}在<Piran>出生。,朱塞佩·塔替尼
+1770年2月26日,朱塞佩·塔替尼,帕多瓦,city,45.4077172,11.8734455,45.3395667,45.4573727,11.8054118,11.976435,帕多瓦-PD-VEN-意大利,[1770年2月26日]，{朱塞佩·塔替尼}在<帕多瓦>逝世。,朱塞佩·塔替尼

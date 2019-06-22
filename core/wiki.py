@@ -81,9 +81,6 @@ class WikiCrawler:
         soup = BeautifulSoup(html, features="html.parser")
         i = 0
         for node_div in soup.find_all("div", {"class": "hatnote navigation-not-searchable"}):
-            if i < 5:
-                i += 1
-                continue
             period = node_div.find_previous("h2").find("span", {"class": "mw-headline"}).text
             print('\n')
             print('正在爬取' + period + '的音乐家 ...')

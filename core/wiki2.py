@@ -315,7 +315,7 @@ class WikiCleaner:
         """
         files = os.listdir(self.path_clean3 + "\\done\\")
         locs = []
-        nlp = StanfordCoreNLP('D:\\Project\\NLP-zh\\corenlp', port=9000, lang='zh')
+        nlp = StanfordCoreNLP('D:\\Project\\nlp-zh\\corenlp', port=9000, lang='zh')
         for file in files:
             if os.path.splitext(file)[-1] != ".txt":
                 continue
@@ -424,7 +424,8 @@ class WikiCleaner:
                              'gbox2': [geocode['boundingbox'][2]], 'gbox3': [geocode['boundingbox'][3]],
                              'gtype': [geocode['type']],
                              'ginfo': [th2zh(geocode['display_name']).replace(', ', '-')]})
-                        if '台湾' in geo.ginfo[0] or ('中国' in geo.ginfo[0] and '上海' not in geo.ginfo[0]) or '日本' in geo.ginfo[0]:
+                        if '台湾' in geo.ginfo[0] or ('中国' in geo.ginfo[0] and '上海' not in geo.ginfo[0]) or '日本' in \
+                                geo.ginfo[0]:
                             print('>> 中国/日本!', file[:-4], '<' + loc + '>', line)
                             print(geo[['geo', 'ginfo']].values)
                             break
@@ -433,8 +434,10 @@ class WikiCleaner:
                         geos = geos.append(geo, ignore_index=True, sort=False)
                     for per in list_per:
                         for date in list_date:
-                            df = pd.DataFrame({'date': [date], 'ppl': [per], 'geo': [loc],
-                                               'desc': [sbc2dbc(line)]})
+                            df = pd.DataFrame(
+                                {'date': [date], 'ppl': [per], 'ppls': [" ".join(str(x) for x in list_per)],
+                                 'geo': [loc],
+                                 'desc': [sbc2dbc(line)]})
                             df = pd.merge(df, geo, on=['geo'], how='left')
                             result = result.append(df, ignore_index=True, sort=False)
                             result = result.sort_values(by=['date'])
@@ -454,8 +457,8 @@ class WikiCleaner:
 
 if __name__ == "__main__":
     wikiCrawler = WikiCleaner()
-    wikiCrawler.clean_1()
-    wikiCrawler.clean_2()
-    wikiCrawler.clean_3()
+    # wikiCrawler.clean_1()
+    # wikiCrawler.clean_2()
+    # wikiCrawler.clean_3()
     # wikiCrawler.clean_4()
-    # wikiCrawler.clean_5()
+    wikiCrawler.clean_5()

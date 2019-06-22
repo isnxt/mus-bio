@@ -1,4 +1,0 @@
-date,ppl,geo,gtype,glat,glon,gbox0,gbox1,gbox2,gbox3,ginfo,desc
-1847年2月15日,罗伯特·富克斯,拉斯尼茨,embassy,46.06999879999999,14.50303185,46.0699378,46.0700598,14.5029119,14.503151800000001,波斯尼亚和黑塞哥维那大使馆-26-Kolarjeva ulica-Župančičeva Jama-Bežigrad-卢布尔雅那-Upravna Enota Ljubljana-Osrednjeslovenska-1000-斯洛文尼亚,[1847年2月15日]，{罗伯特·富克斯}在<拉斯尼茨>的<Deutschlandsberg>出生。
-1847年2月15日,罗伯特·富克斯,Deutschlandsberg,administrative,46.8146272,15.2137799,46.7930958,46.927924,15.007921,15.2664459,Deutschlandsberg-Steiermark-奥地利,[1847年2月15日]，{罗伯特·富克斯}在<拉斯尼茨>的<Deutschlandsberg>出生。
-1927年2月19日,罗伯特·富克斯,维也纳,city,48.2083537,16.372504199999998,48.0483537,48.3683537,16.212504199999998,16.532504199999998,维也纳-Wien-1010-奥地利,[1927年2月19日]，{罗伯特·富克斯}在<维也纳>逝世。

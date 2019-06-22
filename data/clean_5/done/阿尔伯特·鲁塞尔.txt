@@ -1,4 +1,0 @@
-date,ppl,geo,gtype,glat,glon,gbox0,gbox1,gbox2,gbox3,ginfo,desc
-1869年4月5日,阿尔伯特·鲁塞尔,Tourcoing,administrative,50.7235038,3.1605714,50.6930811,50.7490318,3.1186236000000003,3.1967341,Tourcoing-Lille-Nord-Hauts-de-France-法国-59200-法国,[1869年4月5日]，{阿尔伯特·鲁塞尔}在<Tourcoing>出生。
-1889年,阿尔伯特·鲁塞尔,亚洲,continent,51.2086975,89.2343748,51.2086475,51.2087475,89.2343248,89.2344248,亚洲,[1889年]，{阿尔伯特·鲁塞尔}参加海军，随舰航行到<亚洲>地区。
-1937年8月23日,阿尔伯特·鲁塞尔,Royan,administrative,45.6245332,-1.0287636,45.6119614,45.6566781,-1.0544563999999998,-0.9708931,Royan-Rochefort-Charente-Maritime-Nouvelle-Aquitaine-法国-17200-法国,[1937年8月23日]，{阿尔伯特·鲁塞尔}在<Royan>逝世。

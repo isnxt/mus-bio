@@ -1,3 +1,0 @@
-date,ppl,geo,gtype,glat,glon,gbox0,gbox1,gbox2,gbox3,ginfo,desc
-1848年2月27日,休伯特·帕里,Bournemouth,historic,50.74467035,-1.8579809031809398,50.7091166,50.7803889,-1.937617,-1.7406582999999998,Bournemouth-Strouden Avenue-Queens Park-Bournemouth-Bournemouth-Christchurch and Poole-South West England-英格兰-BH8 9HT-英国,[1848年2月27日]，{休伯特·帕里}在<Bournemouth>出生。
-1918年10月7日,休伯特·帕里,Rustington,village,50.811077399999995,-0.5101687,50.8024169,50.822959600000004,-0.5204312,-0.4812065,Rustington-West Sussex-South East-英格兰-英国,[1918年10月7日]，{休伯特·帕里}在<Rustington>逝世。

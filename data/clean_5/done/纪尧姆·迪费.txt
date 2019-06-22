@@ -1,4 +1,0 @@
-date,ppl,geo,gtype,glat,glon,gbox0,gbox1,gbox2,gbox3,ginfo,desc
-1397年8月5日,纪尧姆·迪费,布鲁塞尔,administrative,50.8436709,4.36743669338796,50.7964079,50.8904108,4.3355956,4.4020115,布鲁塞尔-Ville de Bruxelles - Stad Brussel-Brussel-Hoofdstad - Bruxelles-Capitale-Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest-比利时,[1397年8月5日]，{纪尧姆·迪费}在<布鲁塞尔>出生。
-1420年-1426年,纪尧姆·迪费,里米尼,city,44.0593886,12.5684371,43.9692955,44.115663,12.4384335,12.6328853,里米尼-RN-EMR-意大利,[1420年-1426年]，{纪尧姆·迪费}在<里米尼>，为佩沙洛的领主马拉特斯塔家服务。
-1474年11月27日,纪尧姆·迪费,Cambrai,administrative,50.1759602,3.2356613,50.1427829,50.2036584,3.2014632,3.2808727,Cambrai-Nord-Hauts-de-France-法国-59400-法国,[1474年11月27日]，{纪尧姆·迪费}在<Cambrai>逝世。

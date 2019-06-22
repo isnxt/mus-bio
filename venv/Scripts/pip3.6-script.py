@@ -1,4 +1,4 @@
-#!E:\Musician-Bio\NLP-zh\venv\Scripts\python.exe
+#!E:\Musician-Bio\nlp-zh\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip3.6'
 __requires__ = 'pip==19.0.3'
 import re

@@ -1,5 +1,0 @@
-date,ppl,geo,gtype,glat,glon,gbox0,gbox1,gbox2,gbox3,ginfo,desc
-1660年12月4日,安德烈·坎普拉,Aix-en-Provence,city,43.5298424,5.4474738,43.4461058,43.6259224,5.2694745,5.5063013,普罗旺斯地区艾克斯-Aix-en-Provence-Bouches-du-Rhône-Provence-Alpes-Côte d'Azur-法国-法国,[1660年12月4日]，{安德烈·坎普拉}在<Aix-en-Provence>出生。
-1674年,安德烈·坎普拉,Aix-en-Provence,city,43.5298424,5.4474738,43.4461058,43.6259224,5.2694745,5.5063013,普罗旺斯地区艾克斯-Aix-en-Provence-Bouches-du-Rhône-Provence-Alpes-Côte d'Azur-法国-法国,在[1674年]，{安德烈·坎普拉}成为<Aix-en-Provence>的Saint-Sauveur教堂的一个唱诗班男童。
-1694年-1700年,安德烈·坎普拉,图卢兹,city,43.6044622,1.4442469,43.532654,43.668708,1.3503956,1.5153795,图卢兹-上加龙省-Occitanie-法国-法国,{安德烈·坎普拉}在Arles和<图卢兹>的教堂从事音乐指导工作后，自[1694年-1700年]，{安德烈·坎普拉}成为巴黎圣母院的音乐指导。
-1744年6月29日,安德烈·坎普拉,Versailles,administrative,48.8035403,2.1266886,48.7792385,48.8286153,2.0699384,2.1683504,Versailles-Yvelines-法兰西岛大区-法国-78000-法国,[1744年6月29日]，{安德烈·坎普拉}在<Versailles>逝世。
