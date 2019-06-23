@@ -2,7 +2,9 @@ import os
 import sys
 import chardet
 from core import nlp
+
 root_path = os.path.abspath('.')
+
 
 def read_data(file_path):
     print(file_path)
@@ -40,13 +42,13 @@ def main(in_path, out_path):
     if in_data == 'error':
         print('this is an error about %s' % in_path)
     else:
-        print('\nin_data:\n' + in_data)
+        print(in_data)
         para_ners = nlp.analyse(in_data)
         out_data = ""
-        type_name = ["date", "person", "location", "sentence"]
+        # type_name = ["date", "person", "location", "sentence"]
         for sentence_ners in para_ners:
             for i in range(len(sentence_ners)):
-                out_data += type_name[i] + "|"
+                # out_data += type_name[i] + "|"
                 for item in sentence_ners[i]:
                     out_data += item + "|"
                 out_data += "\n"
@@ -58,7 +60,4 @@ def main(in_path, out_path):
 
 
 if __name__ == "__main__":
-    files_path = ["./data" + '/' + x for x in os.listdir("./data")]
-    for file_path in files_path:
-        if os.path.splitext(file_path)[1] == '.txt':
-            read_data(file_path)
+    main(sys.argv[1], sys.argv[2])

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mocom.musician.mapper.MusicianMapper">
+
+    <resultMap type="mocom.musician.entity.Musician" id="musicianResultMap">
+        <id property="id" column="id"/>
+        <result property="date" column="date"/>
+        <result property="title" column="title"/>
+        <result property="city" column="city"/>
+        <result property="latitude" column="latitude"/>
+        <result property="longitude" column="longitude"/>
+        <result property="description" column="description"/>
+        <result property="peoples" column="peoples"/>
+    </resultMap>
+
+    <select id="getAllMusician" resultType="String">
+        SELECT DISTINCT title FROM musician.musician ORDER BY CONVERT( title USING gbk ) COLLATE gbk_chinese_ci ASC;
+    </select>
+
+    <select id="getInformation" resultMap="musicianResultMap">
+        SELECT * FROM musician.musician WHERE title="${title}";
+    </select>
+
+</mapper>
